@@ -48,7 +48,7 @@ export default function Navigation() {
 
         {/* CTA Button */}
         <a
-          href="https://wa.me/5511999999999?text=Olá%20BKL%20Engenharia!%20Gostaria%20de%20solicitar%20um%20orçamento."
+          href="https://wa.me/5511943750033?text=Olá%20BKL%20Engenharia!%20Gostaria%20de%20solicitar%20um%20orçamento."
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-flex items-center gap-2 px-6 py-2.5 bg-accent text-white rounded-lg font-semibold text-sm hover:bg-orange-600 transition-all duration-200 hover:shadow-lg hover:shadow-accent/30"
@@ -80,7 +80,7 @@ export default function Navigation() {
               </a>
             ))}
             <a
-              href="https://wa.me/5511999999999?text=Olá%20BKL%20Engenharia!%20Gostaria%20de%20solicitar%20um%20orçamento."
+              href="https://wa.me/5511943750033?text=Olá%20BKL%20Engenharia!%20Gostaria%20de%20solicitar%20um%20orçamento."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full px-4 py-2.5 bg-accent text-white rounded-lg font-semibold text-center hover:bg-orange-600 transition-all"

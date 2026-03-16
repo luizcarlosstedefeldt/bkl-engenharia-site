@@ -1,5 +1,4 @@
 import { MessageCircle, Phone, Mail, MapPin, ArrowRight } from 'lucide-react';
-import { Link } from 'wouter';
 
 /**
  * Footer Component
@@ -24,10 +23,10 @@ export default function Footer() {
               <span className="font-bold text-lg">BKL Engenharia</span>
             </div>
             <p className="text-white/80 text-sm leading-relaxed mb-4">
-              Soluções profissionais em engenharia e construção há mais de 10 anos.
+              Soluções profissionais em ventilação, climatização e ar condicionado desde 2017.
             </p>
             <a
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/5511943750033"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-accent hover:text-orange-400 transition-colors text-sm font-semibold"
@@ -68,10 +67,10 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-lg mb-4">Serviços</h4>
             <ul className="space-y-2">
-              <li className="text-white/80 text-sm">Construção Civil</li>
-              <li className="text-white/80 text-sm">Reformas e Restauração</li>
-              <li className="text-white/80 text-sm">Sistemas de Ventilação</li>
-              <li className="text-white/80 text-sm">Engenharia Especializada</li>
+              <li className="text-white/80 text-sm">Ventilação Industrial</li>
+              <li className="text-white/80 text-sm">Climatização Adiabática</li>
+              <li className="text-white/80 text-sm">Ar Condicionado</li>
+              <li className="text-white/80 text-sm">Exaustão de Cozinhas</li>
             </ul>
           </div>
 
@@ -81,8 +80,8 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-white/80 text-sm">
                 <MessageCircle size={16} className="text-accent flex-shrink-0" />
-                <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
-                  (11) 99999-9999
+                <a href="https://wa.me/5511943750033" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                  (11) 94375-0033
                 </a>
               </li>
               <li className="flex items-center gap-2 text-white/80 text-sm">
@@ -99,7 +98,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2 text-white/80 text-sm">
                 <MapPin size={16} className="text-accent flex-shrink-0 mt-0.5" />
-                <span>São Paulo, SP - Brasil</span>
+                <span>Rua Alto de Santa Helena, 7 - São Paulo, SP</span>
               </li>
             </ul>
           </div>

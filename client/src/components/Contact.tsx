@@ -63,7 +63,7 @@ export default function Contact() {
             <div className="space-y-6 mb-8">
               {/* WhatsApp - Primary */}
               <a
-                href="https://wa.me/5511999999999?text=Olá%20BKL%20Engenharia!%20Gostaria%20de%20solicitar%20um%20orçamento."
+                href="https://wa.me/5511943750033?text=Olá%20BKL%20Engenharia!%20Gostaria%20de%20solicitar%20um%20orçamento."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-200 group"
@@ -73,7 +73,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-semibold text-white">WhatsApp</p>
-                  <p className="text-white/80 text-sm">(11) 99999-9999</p>
+                  <p className="text-white/80 text-sm">(11) 94375-0033</p>
                 </div>
               </a>
 
@@ -112,14 +112,14 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-semibold text-white">Endereço</p>
-                  <p className="text-white/80 text-sm">São Paulo, SP - Brasil</p>
+                  <p className="text-white/80 text-sm">Rua Alto de Santa Helena, 7 - São Paulo, SP</p>
                 </div>
               </div>
             </div>
 
             {/* CTA Button */}
             <a
-              href="https://wa.me/5511999999999?text=Olá%20BKL%20Engenharia!%20Gostaria%20de%20solicitar%20um%20orçamento."
+              href="https://wa.me/5511943750033?text=Olá%20BKL%20Engenharia!%20Gostaria%20de%20solicitar%20um%20orçamento."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-accent text-white rounded-lg font-semibold hover:bg-orange-600 transition-all duration-200 hover:shadow-lg hover:shadow-accent/40 hover:translate-y-[-2px]"

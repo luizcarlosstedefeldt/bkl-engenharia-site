@@ -11,24 +11,24 @@ export default function Portfolio() {
   const projects = [
     {
       id: 1,
-      title: 'Obra Residencial Moderna',
-      category: 'Construção',
-      image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/reforma-residencial-PntBgxmHVwZL9pFdq7M2Lx.webp',
-      description: 'Reforma de alto padrão com acabamento impecável e design moderno.',
+      title: 'Sistema de Ventilação Industrial - Telhado',
+      category: 'Ventilação Industrial',
+      image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/air-duct-10_fd5ee665.jpg',
+      description: 'Instalação completa de sistema de ventilação industrial com dutos metálicos profissionais.',
     },
     {
       id: 2,
-      title: 'Sistemas de Ventilação Industrial',
-      category: 'Engenharia',
+      title: 'Climatização Adiabática',
+      category: 'Climatização',
       image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/projeto-comercial-4rC5wne5X4DUFuWwpaYbW7.webp',
-      description: 'Instalação de sistemas de climatização e ventilação profissional.',
+      description: 'Sistemas de climatização adiabática para máxima eficiência energética.',
     },
     {
       id: 3,
-      title: 'Construção Estruturada',
-      category: 'Construção',
+      title: 'Exaustão de Cozinhas Industriais',
+      category: 'Exaustão',
       image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/hero-obra-moderna-fJFAE7NPzutYzrGLuPtEZ2.webp',
-      description: 'Estrutura de concreto e aço com segurança e qualidade garantida.',
+      description: 'Soluções completas de exaustão para cozinhas industriais e comerciais.',
     },
   ];
 
@@ -91,7 +91,7 @@ export default function Portfolio() {
         {/* CTA */}
         <div className="mt-16 text-center">
           <a
-            href="https://wa.me/5511999999999?text=Olá%20BKL%20Engenharia!%20Gostaria%20de%20conhecer%20mais%20sobre%20seus%20projetos."
+              href="https://wa.me/5511943750033?text=Olá%20BKL%20Engenharia!%20Gostaria%20de%20conhecer%20mais%20sobre%20seus%20projetos."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3.5 bg-accent text-white rounded-lg font-semibold hover:bg-orange-600 transition-all duration-200 hover:shadow-lg hover:shadow-accent/40"
