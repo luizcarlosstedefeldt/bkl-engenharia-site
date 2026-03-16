@@ -32,7 +32,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg text-white/90 mb-8 leading-relaxed max-w-lg">
-            A BKL Engenharia oferece soluções completas em construção, reformas e projetos de engenharia. Com profissionalismo e qualidade, entregamos obras que superam expectativas.
+            A BKL Engenharia oferece soluções completas em projetos, fabricação e instalações de Sistemas de ventilação industrial com profissionalismo e qualidade dentro das normas vigentes.
           </p>
 
           {/* Benefits List */}
