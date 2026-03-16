@@ -25,12 +25,11 @@ export default function Navigation() {
       <div className="container flex items-center justify-between h-20">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 rounded-lg flex items-center justify-center text-white font-bold text-lg transition-transform group-hover:scale-105">
-            BKL
-          </div>
-          <span className="font-bold text-lg text-foreground hidden sm:inline">
-            BKL Engenharia
-          </span>
+          <img
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/LogosemHVAC_c1620f1b.png"
+            alt="BKL Engenharia"
+            className="h-12 w-auto transition-transform group-hover:scale-105"
+          />
         </Link>
 
         {/* Desktop Menu */}

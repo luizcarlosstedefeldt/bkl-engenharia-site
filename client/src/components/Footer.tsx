@@ -17,10 +17,11 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center font-bold text-lg">
-                BKL
-              </div>
-              <span className="font-bold text-lg">BKL Engenharia</span>
+              <img
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/LogosemHVAC_c1620f1b.png"
+                alt="BKL Engenharia"
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-white/80 text-sm leading-relaxed mb-4">
               Soluções profissionais em ventilação, climatização e ar condicionado desde 2017.
