@@ -8,7 +8,7 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react';
  * - Animações suaves e CTAs em laranja
  */
 export default function Hero() {
-  const heroImageUrl = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/hero-obra-moderna-fJFAE7NPzutYzrGLuPtEZ2.webp';
+  const heroImageUrl = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/engenharia2_fec10928.jpg';
 
   const benefits = [
     'Mais de 10 anos de experiência',
