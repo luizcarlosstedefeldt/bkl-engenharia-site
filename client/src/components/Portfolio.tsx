@@ -27,7 +27,7 @@ export default function Portfolio() {
       id: 3,
       title: 'Exaustão de Cozinhas Industriais',
       category: 'Exaustão',
-      image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/hero-obra-moderna-fJFAE7NPzutYzrGLuPtEZ2.webp',
+      image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/kitchen-hero-560-300-560x373_a8601899.jpg',
       description: 'Soluções completas de exaustão para cozinhas industriais e comerciais.',
     },
   ];
