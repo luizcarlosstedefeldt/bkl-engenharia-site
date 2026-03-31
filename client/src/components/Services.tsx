@@ -28,7 +28,7 @@ export default function Services() {
       icon: Wind,
       title: 'Ar Condicionado',
       description: 'Sistemas de ar condicionado para conforto térmico em diversos ambientes em conformidade com NR-33.',
-      features: ['Projetos BIM', 'Instalação profissional', 'Garantia de qualidade'],
+      features: ['Projetos customizados', 'Instalação profissional', 'Garantia de qualidade'],
     },
     {
       id: 4,
