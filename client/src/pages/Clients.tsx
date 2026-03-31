@@ -161,7 +161,7 @@ export default function Clients() {
                   <img
                     src={client.logo}
                     alt={client.name}
-                    style={{ width: '300px' }}
+                    style={{ width: '150px' }}
                     className="max-h-24 max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
                   />
                 </div>
