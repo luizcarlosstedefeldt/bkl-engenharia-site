@@ -13,7 +13,7 @@ export default function Services() {
       id: 1,
       icon: Building2,
       title: 'Ventilação Industrial',
-      description: 'Sistemas completos de ventilação industrial para processos e conforto térmico em conformidade com NR-10 e NR-12.',
+      description: 'Sistemas completos de ventilação industrial para processos e conforto térmico em conformidade com as leis e normas vigentes.',
       features: ['Projetos customizados', 'Instalação profissional', 'Manutenção especializada'],
     },
     {
