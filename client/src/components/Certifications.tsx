@@ -14,7 +14,7 @@ export default function Certifications() {
       title: 'Membro ABRAVA',
       description: 'Associação Brasileira de Refrigeração, Ar Condicionado, Ventilação e Aquecimento',
       image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/Abrava_Empresa_Associada_2026_vert_rgb_54db21dc.jpg',
-      year: '2026'
+      year: '2020'
     }
   ];
 
