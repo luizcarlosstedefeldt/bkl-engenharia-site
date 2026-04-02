@@ -15,7 +15,7 @@ export default function Clients() {
       id: 1,
       name: 'Alpargatas',
       logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/ALPARGATAS_567efb9f.jpeg',
-      category: 'Indústria Alimentícia'
+      category: 'Restaurantes em Rodovias'
     },
     {
       id: 2,
@@ -51,7 +51,7 @@ export default function Clients() {
       id: 7,
       name: 'Aurora',
       logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/AURORA_07855ea8.jpeg',
-      category: 'Indústria Alimentícia'
+      category: 'Bens de Consumo'
     },
     {
       id: 8,
@@ -63,7 +63,7 @@ export default function Clients() {
       id: 9,
       name: 'Ajinomoto',
       logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/AJINOMOTO_2c84f2e6.png',
-      category: 'Indústria Alimentícia'
+      category: 'Restaurantes em Rodovias'
     },
     {
       id: 10,
@@ -129,13 +129,13 @@ export default function Clients() {
       id: 20,
       name: 'Graal',
       logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/B6iNxe3lMNyq_48952aac.png',
-      category: 'Indústria Alimentícia'
+      category: 'Bens de Consumo'
     },
     {
       id: 21,
       name: 'Grupo Serbom',
       logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/rwXr0z44r07m_9292d317.webp',
-      category: 'Logística'
+      category: 'Logística e Armazenagem'
     }
   ];
 
@@ -198,10 +198,10 @@ export default function Clients() {
         <div className="container">
           <div className="mb-16">
             <h2 className="text-3xl font-bold mb-2 text-foreground">
-              Empresas que Confiam na BKL
+              Empresas que confiam na BKL
             </h2>
             <p className="text-muted-foreground text-lg">
-              Mais de 50 projetos realizados em diversos segmentos industriais
+              Mais de 100 projetos realizados em diversos segmentos industriais
             </p>
           </div>
 
