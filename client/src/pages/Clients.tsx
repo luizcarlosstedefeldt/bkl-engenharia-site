@@ -106,6 +106,18 @@ export default function Clients() {
       name: 'Petlove',
       logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/mF5WX1yetwGB_9ba6dc15.jpg',
       category: 'Comércio Eletrônico'
+    },
+    {
+      id: 17,
+      name: 'Randon',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/FPPgI14TohBd_6ecd4c5c.jpg',
+      category: 'Automotiva'
+    },
+    {
+      id: 18,
+      name: 'Unilever',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/sqWZ2tCggzn6_5da06481.png',
+      category: 'Bens de Consumo'
     }
   ];
 
