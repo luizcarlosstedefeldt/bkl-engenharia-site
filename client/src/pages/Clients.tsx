@@ -100,6 +100,12 @@ export default function Clients() {
       name: 'Suzano',
       logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/PH8w6ZdLbHhp_9b8ff980.png',
       category: 'Celulose e Papel'
+    },
+    {
+      id: 16,
+      name: 'Petlove',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/mF5WX1yetwGB_9ba6dc15.jpg',
+      category: 'Comércio Eletrônico'
     }
   ];
 
