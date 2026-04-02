@@ -19,7 +19,7 @@ export default function Services() {
     {
       id: 2,
       icon: Hammer,
-      title: 'Climatização Adiabática',
+      title: 'Climatização',
       description: 'Soluções inovadoras de climatização com máxima eficiência energética em conformidade com NR-18.',
       features: ['Tecnologia moderna', 'Economia de energia', 'Sustentabilidade'],
     },
@@ -33,9 +33,9 @@ export default function Services() {
     {
       id: 4,
       icon: Zap,
-      title: 'Exaustão de Cozinhas',
+      title: 'Exaustão de Coifas em Cozinhas Industriais',
       description: 'Sistemas especializados de exaustão para cozinhas industriais em conformidade com ABNT NBR 14518:2020 e NR-12.',
-      features: ['Conformidade com NR', 'Eficiencia de exaustão', 'Manutenção regular'],
+      features: ['Conformidade com NBR 14518:2020', 'Eficiencia de exaustão', 'Manutenção e limpeza em sistemas instalados'],
     },
   ];
 

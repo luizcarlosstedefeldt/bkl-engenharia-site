@@ -11,14 +11,14 @@ export default function Portfolio() {
   const projects = [
     {
       id: 1,
-      title: 'Sistema de Ventilação Industrial',
+      title: 'Ventilação Industrial',
       category: 'Ventilação Industrial',
       image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/air-duct-10_fd5ee665.jpg',
       description: 'Instalação completa de sistema de ventilação industrial.',
     },
     {
       id: 2,
-      title: 'Climatização Evaporativa',
+      title: 'Climatização',
       category: 'Climatização',
       image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/Evaporativo_d7a1ad48.jpg',
       description: 'Sistemas de climatização evaporativa para máxima eficiência energética.',
