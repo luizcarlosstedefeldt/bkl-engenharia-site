@@ -134,7 +134,7 @@ export default function Clients() {
     {
       id: 21,
       name: 'Grupo Serbom',
-      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/1o5C391zASWm_0ea8313c.webp',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/rwXr0z44r07m_9292d317.webp',
       category: 'Logística'
     }
   ];
