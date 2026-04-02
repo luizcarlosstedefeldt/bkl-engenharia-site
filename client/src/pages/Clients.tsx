@@ -239,50 +239,13 @@ export default function Clients() {
               <p className="text-foreground text-lg">Projetos Realizados</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-accent mb-2">12</div>
+              <div className="text-5xl font-bold text-accent mb-2">19+</div>
               <p className="text-foreground text-lg">Principais Clientes</p>
             </div>
             <div className="text-center">
               <div className="text-5xl font-bold text-primary mb-2">8+</div>
               <p className="text-foreground text-lg">Anos de Experiência</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-20 bg-background">
-        <div className="container">
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold mb-2 text-foreground">
-              O que Nossos Clientes Dizem
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              Depoimentos de empresas que confiam na qualidade da BKL Engenharia
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial) => (
-              <div
-                key={testimonial.id}
-                className="bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-all duration-300"
-              >
-                <div className="flex items-center gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <span key={i} className="text-accent text-xl">★</span>
-                  ))}
-                </div>
-                <p className="text-foreground mb-6 leading-relaxed italic">
-                  "{testimonial.text}"
-                </p>
-                <div className="border-t border-border pt-4">
-                  <p className="font-bold text-foreground">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                  <p className="text-sm text-accent font-semibold">{testimonial.company}</p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
