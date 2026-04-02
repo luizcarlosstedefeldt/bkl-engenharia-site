@@ -82,6 +82,12 @@ export default function Clients() {
       name: 'Frasle',
       logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/FRASLE_23a8ad02.png',
       category: 'Automotiva'
+    },
+    {
+      id: 13,
+      name: 'Mahle',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/A3mOV8GMJ1Dj_09794e95.png',
+      category: 'Automotiva'
     }
   ];
 
