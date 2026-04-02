@@ -130,6 +130,12 @@ export default function Clients() {
       name: 'Graal',
       logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/B6iNxe3lMNyq_48952aac.png',
       category: 'Indústria Alimentícia'
+    },
+    {
+      id: 21,
+      name: 'Grupo Serbom',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/1o5C391zASWm_0ea8313c.webp',
+      category: 'Logística'
     }
   ];
 
@@ -245,7 +251,7 @@ export default function Clients() {
               <p className="text-foreground text-lg">Projetos Realizados</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-accent mb-2">20+</div>
+              <div className="text-5xl font-bold text-accent mb-2">21+</div>
               <p className="text-foreground text-lg">Principais Clientes</p>
             </div>
             <div className="text-center">
