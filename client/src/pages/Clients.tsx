@@ -56,7 +56,7 @@ export default function Clients() {
     {
       id: 8,
       name: 'LD Celulose',
-      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/LDCelulose_5f59d9e6.png',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/LDCelulose_c7d0181a.png',
       category: 'Celulose e Papel'
     },
     {
