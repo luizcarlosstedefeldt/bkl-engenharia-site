@@ -61,7 +61,7 @@ export default function About() {
     {
       year: '2024-2025',
       title: 'Inovação e Modernização',
-      description: 'Investimento em tecnologia BIM, modernização de processos e expansão da capacidade de fabricação e instalação.'
+      description: 'Investimento em equipamentos de última geração, modernização de processos e expansão da capacidade de fabricação e instalação com equipe própria.'
     }
   ];
 
