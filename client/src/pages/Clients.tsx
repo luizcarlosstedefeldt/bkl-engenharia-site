@@ -88,6 +88,18 @@ export default function Clients() {
       name: 'Mahle',
       logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/A3mOV8GMJ1Dj_09794e95.png',
       category: 'Automotiva'
+    },
+    {
+      id: 14,
+      name: 'Vale',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/zo4HvxDVroGH_440323a6.png',
+      category: 'Mineradora'
+    },
+    {
+      id: 15,
+      name: 'Suzano',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/PH8w6ZdLbHhp_9b8ff980.png',
+      category: 'Celulose e Papel'
     }
   ];
 
