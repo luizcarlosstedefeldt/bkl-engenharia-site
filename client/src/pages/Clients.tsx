@@ -118,6 +118,12 @@ export default function Clients() {
       name: 'Unilever',
       logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/sqWZ2tCggzn6_5da06481.png',
       category: 'Bens de Consumo'
+    },
+    {
+      id: 19,
+      name: 'Construcap',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/nVvqX01Et7ar_ebbd3d0e.png',
+      category: 'Construção e Engenharia'
     }
   ];
 
