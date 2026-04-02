@@ -131,7 +131,9 @@ export default function About() {
                   Visão
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Estar focados no atendimento das necessidades dos clientes através de tecnologia moderna e eficaz, qualidade de fabricação e instalações, superando suas expectativas e consolidando nossa posição como referência no mercado.
+                  Nosso objetivo é estar focado em atender as necessidades dos clientes através de tecnologia moderna e eficaz, qualidade de fabricação e de Instalações, e se possível superar suas expectativas.
+                  <br /><br />
+                  Engenharia, desenvolvimento e atendimento. Este foco é um compromisso de todos os colaboradores e perfil de trabalho da organização.
                 </p>
               </div>
 
