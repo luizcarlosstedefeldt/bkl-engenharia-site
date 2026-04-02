@@ -124,6 +124,12 @@ export default function Clients() {
       name: 'Construcap',
       logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/nVvqX01Et7ar_ebbd3d0e.png',
       category: 'Construção e Engenharia'
+    },
+    {
+      id: 20,
+      name: 'Graal',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/B6iNxe3lMNyq_48952aac.png',
+      category: 'Indústria Alimentícia'
     }
   ];
 
@@ -239,7 +245,7 @@ export default function Clients() {
               <p className="text-foreground text-lg">Projetos Realizados</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-accent mb-2">19+</div>
+              <div className="text-5xl font-bold text-accent mb-2">20+</div>
               <p className="text-foreground text-lg">Principais Clientes</p>
             </div>
             <div className="text-center">
