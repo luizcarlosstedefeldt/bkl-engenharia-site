@@ -74,7 +74,7 @@ export default function Clients() {
     {
       id: 11,
       name: 'Embraer',
-      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/EMBRAER_2_png',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/i4EHRvzmwhMx_ca31c158.jpg',
       category: 'Aeronáutica'
     },
     {
