@@ -27,7 +27,7 @@ export default function Services() {
       id: 3,
       icon: Wind,
       title: 'Ar Condicionado',
-      description: 'Sistemas de ar condicionado para conforto térmico em diversos ambientes em conformidade com NR-33.',
+      description: 'Sistemas de ar condicionado para conforto térmico em diversos ambientes.',
       features: ['Projetos customizados', 'Instalação profissional', 'Garantia de qualidade'],
     },
     {
