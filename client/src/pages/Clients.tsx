@@ -247,7 +247,7 @@ export default function Clients() {
         <div className="container relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-5xl font-bold text-primary mb-2">50+</div>
+              <div className="text-5xl font-bold text-primary mb-2">100+</div>
               <p className="text-foreground text-lg">Projetos Realizados</p>
             </div>
             <div className="text-center">
