@@ -15,7 +15,7 @@ export default function Clients() {
       id: 1,
       name: 'Alpargatas',
       logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/ALPARGATAS_567efb9f.jpeg',
-      category: 'Restaurantes em Rodovias'
+      category: 'Indústria Alimentícia'
     },
     {
       id: 2,
@@ -51,19 +51,19 @@ export default function Clients() {
       id: 7,
       name: 'Aurora',
       logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/AURORA_07855ea8.jpeg',
-      category: 'Bens de Consumo'
+      category: 'Indústria Alimentícia'
     },
     {
       id: 8,
       name: 'LD Celulose',
-      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/LDCelulose_c7d0181a.png',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/LDCelulose_5f59d9e6.png',
       category: 'Celulose e Papel'
     },
     {
       id: 9,
       name: 'Ajinomoto',
       logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/AJINOMOTO_2c84f2e6.png',
-      category: 'Restaurantes em Rodovias'
+      category: 'Indústria Alimentícia'
     },
     {
       id: 10,
@@ -74,68 +74,14 @@ export default function Clients() {
     {
       id: 11,
       name: 'Embraer',
-      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/i4EHRvzmwhMx_ca31c158.jpg',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/EMBRAER_2_png',
       category: 'Aeronáutica'
     },
     {
       id: 12,
       name: 'Frasle',
-      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/FRASLE_23a8ad02.png',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/FRASLE_57706099.jpeg',
       category: 'Automotiva'
-    },
-    {
-      id: 13,
-      name: 'Mahle',
-      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/A3mOV8GMJ1Dj_09794e95.png',
-      category: 'Automotiva'
-    },
-    {
-      id: 14,
-      name: 'Vale',
-      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/zo4HvxDVroGH_440323a6.png',
-      category: 'Mineradora'
-    },
-    {
-      id: 15,
-      name: 'Suzano',
-      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/PH8w6ZdLbHhp_9b8ff980.png',
-      category: 'Celulose e Papel'
-    },
-    {
-      id: 16,
-      name: 'Petlove',
-      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/mF5WX1yetwGB_9ba6dc15.jpg',
-      category: 'Comércio Eletrônico'
-    },
-    {
-      id: 17,
-      name: 'Randon',
-      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/FPPgI14TohBd_6ecd4c5c.jpg',
-      category: 'Automotiva'
-    },
-    {
-      id: 18,
-      name: 'Unilever',
-      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/sqWZ2tCggzn6_5da06481.png',
-      category: 'Bens de Consumo'
-    },
-    {
-      id: 19,
-      name: 'Construcap',
-      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/nVvqX01Et7ar_ebbd3d0e.png',
-      category: 'Construção e Engenharia'
-    },
-    {
-      id: 20,
-      name: 'Graal',
-      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/B6iNxe3lMNyq_48952aac.png',
-      category: 'Bens de Consumo'
-    },
-    {
-      id: 21,
-      name: 'Grupo Serbom',
-      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/rwXr0z44r07m_9292d317.webp',
-      category: 'Logística e Armazenagem'
     }
   ];
 
@@ -198,10 +144,10 @@ export default function Clients() {
         <div className="container">
           <div className="mb-16">
             <h2 className="text-3xl font-bold mb-2 text-foreground">
-              Empresas que confiam na BKL
+              Empresas que Confiam na BKL
             </h2>
             <p className="text-muted-foreground text-lg">
-              Mais de 100 projetos realizados em diversos segmentos industriais
+              Mais de 50 projetos realizados em diversos segmentos industriais
             </p>
           </div>
 
@@ -247,17 +193,54 @@ export default function Clients() {
         <div className="container relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-5xl font-bold text-primary mb-2">100+</div>
+              <div className="text-5xl font-bold text-primary mb-2">50+</div>
               <p className="text-foreground text-lg">Projetos Realizados</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-accent mb-2">21+</div>
+              <div className="text-5xl font-bold text-accent mb-2">12</div>
               <p className="text-foreground text-lg">Principais Clientes</p>
             </div>
             <div className="text-center">
               <div className="text-5xl font-bold text-primary mb-2">8+</div>
               <p className="text-foreground text-lg">Anos de Experiência</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-20 bg-background">
+        <div className="container">
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold mb-2 text-foreground">
+              O que Nossos Clientes Dizem
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              Depoimentos de empresas que confiam na qualidade da BKL Engenharia
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial) => (
+              <div
+                key={testimonial.id}
+                className="bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-all duration-300"
+              >
+                <div className="flex items-center gap-1 mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <span key={i} className="text-accent text-xl">★</span>
+                  ))}
+                </div>
+                <p className="text-foreground mb-6 leading-relaxed italic">
+                  "{testimonial.text}"
+                </p>
+                <div className="border-t border-border pt-4">
+                  <p className="font-bold text-foreground">{testimonial.name}</p>
+                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                  <p className="text-sm text-accent font-semibold">{testimonial.company}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

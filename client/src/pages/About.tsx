@@ -61,7 +61,7 @@ export default function About() {
     {
       year: '2024-2025',
       title: 'Inovação e Modernização',
-      description: 'Investimento em equipamentos de última geração, modernização de processos e expansão da capacidade de fabricação e instalação com equipe própria.'
+      description: 'Investimento em tecnologia BIM, modernização de processos e expansão da capacidade de fabricação e instalação.'
     }
   ];
 
@@ -131,9 +131,7 @@ export default function About() {
                   Visão
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Nosso objetivo é estar focado em atender as necessidades dos clientes através de tecnologia moderna e eficaz, qualidade de fabricação e de Instalações, e se possível superar suas expectativas.
-                  <br /><br />
-                  Engenharia, desenvolvimento e atendimento. Este foco é um compromisso de todos os colaboradores e perfil de trabalho da organização.
+                  Estar focados no atendimento das necessidades dos clientes através de tecnologia moderna e eficaz, qualidade de fabricação e instalações, superando suas expectativas e consolidando nossa posição como referência no mercado.
                 </p>
               </div>
 
