@@ -20,7 +20,8 @@ export default function Footer() {
               <img
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/LogosemHVAC_c1620f1b.png"
                 alt="BKL Engenharia"
-                className="h-10 w-auto"
+                className="h-16 w-auto"
+                style={{ width: '250px', height: '65px' }}
               />
             </div>
             <p className="text-white/80 text-sm leading-relaxed mb-4">
@@ -54,6 +55,11 @@ export default function Footer() {
               <li>
                 <a href="#servicos" className="text-white/80 hover:text-accent transition-colors text-sm">
                   Serviços
+                </a>
+              </li>
+              <li>
+                <a href="/clientes" className="text-white/80 hover:text-accent transition-colors text-sm">
+                  Clientes
                 </a>
               </li>
               <li>

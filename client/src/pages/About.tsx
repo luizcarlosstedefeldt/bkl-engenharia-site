@@ -69,17 +69,17 @@ export default function About() {
     {
       id: 1,
       title: 'Equipe Qualificada',
-      description: 'Profissionais devidamente habilitados e certificados para exercer suas funções, garantindo qualidade em todos os projetos.'
+      description: 'Profissionais próprios devidamente habilitados, documentados e certificados para exercer suas funções, garantindo qualidade em todos os projetos.'
     },
     {
       id: 2,
       title: 'Conformidade Normativa',
-      description: 'Atendimento rigoroso às normas NR-18, NR-12, NR-10, NR-33, NR-06, NR-01, NR-11 e ABNT NBR 14518:2020.'
+      description: 'Atendimento rigoroso às normas nacionais NR-18, NR-15, NR-12, NR-10, NR-33, NR-06, NR-01, NR-11 e ABNT NBR 14518:2020 e 16401:2025. Instruções Técnicas do Corpo de Bombeiros e ANVISA.'
     },
     {
       id: 3,
       title: 'Suporte Técnico',
-      description: 'Equipe especializada em manutenção e suporte técnico para garantir funcionamento perfeito dos sistemas instalados.'
+      description: 'Equipe especializada em manutenção, incluindo limpeza de sistemas de exaustão de coifas industriais, incluindo suporte técnico para garantir funcionamento perfeito dos sistemas instalados.'
     }
   ];
 
