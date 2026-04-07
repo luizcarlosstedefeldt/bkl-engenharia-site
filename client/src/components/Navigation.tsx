@@ -14,9 +14,9 @@ export default function Navigation() {
 
   const navLinks = [
     { label: 'Início', href: '/' },
-    { label: 'Sobre', href: '/sobre' },
-    { label: 'Clientes', href: '/clientes' },
+    { label: 'Sobre', href: '#sobre' },
     { label: 'Portfólio', href: '#portfolio' },
+    { label: 'Clientes', href: '#clientes' },
     { label: 'Serviços', href: '#servicos' },
     { label: 'Contato', href: '#contato' },
   ];
