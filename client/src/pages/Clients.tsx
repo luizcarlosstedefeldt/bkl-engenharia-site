@@ -283,7 +283,7 @@ export default function Clients() {
                       <img
                         src={project.clientLogo}
                         alt={project.client}
-                        style={{ width: project.id === 3 ? '85px' : project.id === 4 ? '80px' : '50px', height: project.id === 3 || project.id === 4 ? '52px' : '38px' }}
+                        style={{ width: project.id === 1 ? '100px' : project.id === 2 ? '70px' : project.id === 3 ? '160px' : project.id === 4 ? '80px' : project.id === 5 ? '60px' : '50px', height: 'auto' }}
                         className="object-contain transition-all duration-300 hover:scale-110 hover:brightness-110 cursor-pointer"
                       />
                     ) : (
