@@ -101,6 +101,7 @@ export default function Clients() {
       title: 'Bracell',
       description: 'Projetos de sistemas de Climatização, Ventilação e Exaustão de Cozinhas Industriais que atenderá a capacidade de mais de 4500 refeições/dia.',
       image: '',
+      clientLogo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/bracell-logo_95cd929a.png',
       client: 'Bracell',
       category: 'Projetos de sistemas de Climatização, Ventilação e Exaustão de Cozinhas Industriais',
       year: '2025'
