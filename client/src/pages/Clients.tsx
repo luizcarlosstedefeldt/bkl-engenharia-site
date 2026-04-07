@@ -84,6 +84,24 @@ export default function Clients() {
       name: 'Frasle',
       logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/frasle-logo_426ca503.png',
       category: 'Automotiva'
+    },
+    {
+      id: 13,
+      name: 'Hyundai',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/hyundai-logo_eb0c8063.png',
+      category: 'Automotiva'
+    },
+    {
+      id: 14,
+      name: 'Construcap',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/construcap-logo_2ea70684.png',
+      category: 'Construção'
+    },
+    {
+      id: 15,
+      name: 'Danone',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/danone-logo_ac590ac7.jpg',
+      category: 'Indústria Alimentícia'
     }
   ];
 
