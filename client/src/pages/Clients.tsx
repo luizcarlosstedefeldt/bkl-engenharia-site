@@ -169,7 +169,7 @@ export default function Clients() {
         <div className="container">
           <div className="mb-16">
             <h2 className="text-3xl font-bold mb-2 text-foreground">
-              Empresas que Confiam na BKL
+              Empresas que Confiam na BKL Engenharia
             </h2>
             <p className="text-muted-foreground text-lg">
               Mais de 50 projetos realizados em diversos segmentos industriais
