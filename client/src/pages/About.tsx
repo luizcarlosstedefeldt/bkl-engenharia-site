@@ -46,7 +46,7 @@ export default function About() {
     {
       year: '2018-2019',
       title: 'Expansão e Consolidação',
-      description: 'Consolidação no mercado com projetos em indústrias alimentícias, de energia e combustíveis. Investimento em qualificação de equipe.'
+      description: 'Consolidação no mercado com projetos em indústrias alimentícias, de energia, celulose, mineração e combustíveis. Investimento em equipamentos, frota de veículos e qualificação de equipe.'
     },
     {
       year: '2020',
@@ -56,12 +56,12 @@ export default function About() {
     {
       year: '2021-2023',
       title: 'Diversificação de Serviços',
-      description: 'Expansão para novos segmentos: hotéis, galpões logísticos, edifícios comerciais e residenciais. Implementação de sistemas de pressurização de escadas.'
+      description: 'Expansão para novos segmentos: hotéis, galpões logísticos e edífcios comerciais. Implementação de sistemas de pressurização de escadas e detecção de fumaça para as obras de grandes Construtoras.'
     },
     {
       year: '2024-2025',
       title: 'Inovação e Modernização',
-      description: 'Investimento em tecnologia BIM, modernização de processos e expansão da capacidade de fabricação e instalação.'
+      description: 'Investimento em tecnologia, modernização de processos e expansão da capacidade de fabricação e instalação.'
     }
   ];
 
