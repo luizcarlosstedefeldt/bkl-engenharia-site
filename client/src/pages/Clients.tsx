@@ -161,7 +161,7 @@ export default function Clients() {
       title: 'Suzano',
       description: 'Projetos de sistemas de Climatização, Ventilação e Exaustão em unidades de produção de celulose. Solução completa com conformidade às normas ambientais e de segurança.',
       image: '',
-      clientLogo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/suzano-logo-atualizado_fe94bb1c.png',
+      clientLogo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/suzano-logo-updated_0ab0c231.png',
       client: 'Suzano',
       category: 'Climatização e Ventilação Industrial',
       year: '2025'
