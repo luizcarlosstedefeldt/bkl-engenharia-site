@@ -1,5 +1,7 @@
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 
 /**
  * Clients Page
@@ -169,7 +171,10 @@ export default function Clients() {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen flex flex-col bg-background">
+      <Navigation />
+      
+      <main className="flex-1 pt-20">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -365,6 +370,9 @@ export default function Clients() {
           </div>
         </div>
       </section>
+      </main>
+
+      <Footer />
     </div>
   );
 }
