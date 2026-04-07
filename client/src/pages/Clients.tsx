@@ -80,7 +80,7 @@ export default function Clients() {
     {
       id: 12,
       name: 'Frasle',
-      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/FRASLE_57706099.jpeg',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/frasle-logo_426ca503.png',
       category: 'Automotiva'
     }
   ];
