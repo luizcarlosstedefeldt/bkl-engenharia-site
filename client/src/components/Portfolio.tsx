@@ -18,7 +18,7 @@ export default function Portfolio() {
     },
     {
       id: 2,
-      title: 'Climatização Evaporativa',
+      title: 'Climatização',
       category: 'Climatização',
       image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/Evaporativo_d7a1ad48.jpg',
       description: 'Sistemas de climatização evaporativa para máxima eficiência energética.',
