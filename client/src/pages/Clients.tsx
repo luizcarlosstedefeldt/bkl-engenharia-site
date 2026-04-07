@@ -91,6 +91,7 @@ export default function Clients() {
       title: 'Ventilação Industrial - Gerdau',
       description: 'Sistema completo de ventilação industrial com capacidade de 50.000 m³/h para planta siderúrgica. Conformidade com NR-10 e NR-18.',
       image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/portfolio-ventilacao_industrial.jpg',
+      clientLogo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/gerdau-logo_2e6ff44f.png',
       client: 'Gerdau',
       category: 'Ventilação Industrial',
       year: '2023'
@@ -217,7 +218,15 @@ export default function Clients() {
                     {project.description}
                   </p>
                   <div className="flex items-center justify-between pt-4 border-t border-border">
-                    <span className="text-sm font-semibold text-foreground">{project.client}</span>
+                    {project.clientLogo ? (
+                      <img
+                        src={project.clientLogo}
+                        alt={project.client}
+                        className="h-8 object-contain"
+                      />
+                    ) : (
+                      <span className="text-sm font-semibold text-foreground">{project.client}</span>
+                    )}
                     <ArrowRight size={16} className="text-accent" />
                   </div>
                 </div>
