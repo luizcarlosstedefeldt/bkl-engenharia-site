@@ -75,9 +75,9 @@ export default function Footer() {
             <h4 className="font-bold text-lg mb-4">Serviços</h4>
             <ul className="space-y-2">
               <li className="text-white/80 text-sm">Ventilação Industrial</li>
-              <li className="text-white/80 text-sm">Climatização Adiabática</li>
+              <li className="text-white/80 text-sm">Climatização e Desumidificação</li>
               <li className="text-white/80 text-sm">Ar Condicionado</li>
-              <li className="text-white/80 text-sm">Exaustão de Cozinhas</li>
+              <li className="text-white/80 text-sm">Ventilação e Exaustão de Coifas em Cozinhas Industriais</li>
             </ul>
           </div>
 
