@@ -168,7 +168,7 @@ export default function Clients() {
       <section className="py-20 bg-background">
         <div className="container">
           <div className="mb-16">
-            <h2 className="text-3xl font-bold mb-2 text-foreground">
+            <h2 className="text-3xl font-bold mb-2 text-foreground" style={{ width: '600px' }}>
               Empresas que Confiam na BKL Engenharia
             </h2>
             <p className="text-muted-foreground text-lg">
