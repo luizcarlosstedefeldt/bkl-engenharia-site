@@ -284,7 +284,7 @@ export default function Clients() {
                         src={project.clientLogo}
                         alt={project.client}
                         style={{ width: project.id === 3 ? '85px' : project.id === 4 ? '80px' : '50px', height: project.id === 3 || project.id === 4 ? '52px' : '38px' }}
-                        className="object-contain"
+                        className="object-contain transition-all duration-300 hover:scale-110 hover:brightness-110 cursor-pointer"
                       />
                     ) : (
                       <span className="text-sm font-semibold text-foreground">{project.client}</span>
