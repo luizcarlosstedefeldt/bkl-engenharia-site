@@ -9,11 +9,20 @@ import { useState } from 'react';
  * - Cores: Azul profundo com acentos em laranja
  */
 export default function Contact() {
+  const [activeTab, setActiveTab] = useState<'contact' | 'supplier'>('contact');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     message: '',
+  });
+  const [supplierData, setSupplierData] = useState({
+    companyName: '',
+    cnpj: '',
+    products: ['', '', '', '', ''],
+    contactName: '',
+    phone: '',
+    whatsapp: '',
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -21,12 +30,33 @@ export default function Contact() {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
+  const handleSupplierChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setSupplierData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleProductChange = (index: number, value: string) => {
+    setSupplierData(prev => ({
+      ...prev,
+      products: prev.products.map((p, i) => i === index ? value : p)
+    }));
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const whatsappMessage = `Olá! Meu nome é ${formData.name}. ${formData.message}`;
-    const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://wa.me/5511943750033?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappUrl, '_blank');
     setFormData({ name: '', email: '', phone: '', message: '' });
+  };
+
+  const handleSupplierSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const productsText = supplierData.products.filter(p => p).join(', ');
+    const whatsappMessage = `Olá! Gostaria de me cadastrar como fornecedor.\n\nEmpresa: ${supplierData.companyName}\nCNPJ: ${supplierData.cnpj}\nProdutos: ${productsText}\nContato: ${supplierData.contactName}\nTelefone: ${supplierData.phone}\nWhatsApp: ${supplierData.whatsapp}`;
+    const whatsappUrl = `https://wa.me/5511943750033?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(whatsappUrl, '_blank');
+    setSupplierData({ companyName: '', cnpj: '', products: ['', '', '', '', ''], contactName: '', phone: '', whatsapp: '' });
   };
 
   return (
@@ -44,6 +74,31 @@ export default function Contact() {
       </div>
 
       <div className="relative container">
+        {/* Tabs */}
+        <div className="flex gap-4 mb-12 border-b border-white/20">
+          <button
+            onClick={() => setActiveTab('contact')}
+            className={`px-6 py-3 font-semibold transition-all ${
+              activeTab === 'contact'
+                ? 'text-accent border-b-2 border-accent'
+                : 'text-white/70 hover:text-white'
+            }`}
+          >
+            Contato
+          </button>
+          <button
+            onClick={() => setActiveTab('supplier')}
+            className={`px-6 py-3 font-semibold transition-all ${
+              activeTab === 'supplier'
+                ? 'text-accent border-b-2 border-accent'
+                : 'text-white/70 hover:text-white'
+            }`}
+          >
+            Seja um Fornecedor
+          </button>
+        </div>
+
+        {activeTab === 'contact' && (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left - Info */}
           <div className="text-white">
@@ -213,6 +268,167 @@ export default function Contact() {
             </p>
           </div>
         </div>
+        )}
+
+        {activeTab === 'supplier' && (
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left - Info */}
+          <div className="text-white">
+            <div className="inline-block mb-4 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+              <span className="text-sm font-semibold text-accent">Parceria Comercial</span>
+            </div>
+
+            <h2 className="font-bold text-4xl md:text-5xl mb-6 leading-tight" style={{ fontFamily: 'Poppins, sans-serif' }}>
+              Seja um Fornecedor
+            </h2>
+
+            <p className="text-lg text-white/90 mb-8 leading-relaxed">
+              Estamos sempre em busca de parceiros confiáveis para expandir nossa rede de fornecedores. Se sua empresa oferece produtos ou serviços relacionados à engenharia, ventilação ou climatização, gostaríamos de conhecê-la.
+            </p>
+
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-white text-sm font-bold">✓</span>
+                </div>
+                <p className="text-white/90">Preencha o formulário com seus dados</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-white text-sm font-bold">✓</span>
+                </div>
+                <p className="text-white/90">Descreva os produtos que comercializa</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-white text-sm font-bold">✓</span>
+                </div>
+                <p className="text-white/90">Entraremos em contato para discutir parcerias</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Right - Supplier Form */}
+          <div className="bg-white rounded-lg p-8 shadow-xl">
+            <h3 className="font-bold text-2xl text-foreground mb-6" style={{ fontFamily: 'Poppins, sans-serif' }}>
+              Cadastro de Fornecedor
+            </h3>
+
+            <form onSubmit={handleSupplierSubmit} className="space-y-4">
+              {/* Company Name */}
+              <div>
+                <label className="block text-sm font-semibold text-foreground mb-2">
+                  Nome da Empresa
+                </label>
+                <input
+                  type="text"
+                  name="companyName"
+                  value={supplierData.companyName}
+                  onChange={handleSupplierChange}
+                  required
+                  className="w-full px-4 py-2.5 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all"
+                  placeholder="Sua empresa"
+                />
+              </div>
+
+              {/* CNPJ */}
+              <div>
+                <label className="block text-sm font-semibold text-foreground mb-2">
+                  CNPJ
+                </label>
+                <input
+                  type="text"
+                  name="cnpj"
+                  value={supplierData.cnpj}
+                  onChange={handleSupplierChange}
+                  required
+                  className="w-full px-4 py-2.5 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all"
+                  placeholder="00.000.000/0000-00"
+                />
+              </div>
+
+              {/* Products */}
+              <div>
+                <label className="block text-sm font-semibold text-foreground mb-2">
+                  Produtos que Comercializa (até 5)
+                </label>
+                <div className="space-y-2">
+                  {supplierData.products.map((product, index) => (
+                    <input
+                      key={index}
+                      type="text"
+                      value={product}
+                      onChange={(e) => handleProductChange(index, e.target.value)}
+                      className="w-full px-4 py-2.5 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all"
+                      placeholder={`Produto ${index + 1}`}
+                    />
+                  ))}
+                </div>
+              </div>
+
+              {/* Contact Name */}
+              <div>
+                <label className="block text-sm font-semibold text-foreground mb-2">
+                  Nome do Contato
+                </label>
+                <input
+                  type="text"
+                  name="contactName"
+                  value={supplierData.contactName}
+                  onChange={handleSupplierChange}
+                  required
+                  className="w-full px-4 py-2.5 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all"
+                  placeholder="Nome completo"
+                />
+              </div>
+
+              {/* Phone */}
+              <div>
+                <label className="block text-sm font-semibold text-foreground mb-2">
+                  Telefone
+                </label>
+                <input
+                  type="tel"
+                  name="phone"
+                  value={supplierData.phone}
+                  onChange={handleSupplierChange}
+                  required
+                  className="w-full px-4 py-2.5 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all"
+                  placeholder="(11) 99999-9999"
+                />
+              </div>
+
+              {/* WhatsApp */}
+              <div>
+                <label className="block text-sm font-semibold text-foreground mb-2">
+                  WhatsApp
+                </label>
+                <input
+                  type="tel"
+                  name="whatsapp"
+                  value={supplierData.whatsapp}
+                  onChange={handleSupplierChange}
+                  required
+                  className="w-full px-4 py-2.5 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all"
+                  placeholder="(11) 99999-9999"
+                />
+              </div>
+
+              {/* Submit Button */}
+              <button
+                type="submit"
+                className="w-full px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-orange-600 transition-all duration-200 hover:shadow-lg hover:shadow-accent/30"
+              >
+                Enviar Cadastro via WhatsApp
+              </button>
+            </form>
+
+            <p className="text-xs text-muted-foreground text-center mt-4">
+              Seus dados serão enviados via WhatsApp para análise.
+            </p>
+          </div>
+        </div>
+        )}
       </div>
     </section>
   );

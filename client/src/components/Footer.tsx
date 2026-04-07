@@ -67,6 +67,11 @@ export default function Footer() {
                   Contato
                 </a>
               </li>
+              <li>
+                <a href="#fornecedor" className="text-white/80 hover:text-accent transition-colors text-sm">
+                  Seja um Fornecedor
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -114,20 +119,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-white/10 pt-8 pb-8"></div>
 
-        {/* Clientes Destaque */}
-        <div className="mb-8">
-          <h4 className="font-bold text-lg mb-4">Clientes em Destaque</h4>
-          <div className="flex items-center gap-6">
-            <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/ALPARGATAS_567efb9f.jpeg"
-              alt="Alpargatas"
-              className="h-12 object-contain"
-            />
-          </div>
-        </div>
 
-        {/* Divider */}
-        <div className="border-t border-white/10 pt-8"></div>
 
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
