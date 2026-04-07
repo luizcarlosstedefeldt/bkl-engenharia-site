@@ -114,6 +114,26 @@ export default function Clients() {
       client: 'Alpargatas',
       category: 'Exaustão de Coifas',
       year: '2023'
+    },
+    {
+      id: 4,
+      title: 'Serbom',
+      description: 'Sistemas de desumidificação industrial com tecnologia avançada para controle de umidade em ambientes de produção. Solução completa com monitoramento em tempo real.',
+      image: '',
+      clientLogo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/serbom-logo_55c596ed.png',
+      client: 'Serbom',
+      category: 'Desumidificação Industrial',
+      year: '2024'
+    },
+    {
+      id: 5,
+      title: 'Aurora',
+      description: 'Sistemas de climatização em áreas administrativas, exaustão e ventilação de coifas em cozinhas industriais. Solução integrada para conforto térmico e qualidade do ar.',
+      image: '',
+      clientLogo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/aurora-logo_7da9c3e8.png',
+      client: 'Aurora',
+      category: 'Climatização e Exaustão',
+      year: '2024'
     }
   ];
 
