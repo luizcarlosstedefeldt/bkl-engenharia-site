@@ -134,7 +134,7 @@ export default function Clients() {
       clientLogo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/ALPARGATAS_567efb9f.jpeg',
       client: 'Alpargatas',
       category: 'Ventilação e Exaustão de Coifas',
-      year: '2023'
+      year: '2022'
     },
     {
       id: 4,
@@ -144,7 +144,7 @@ export default function Clients() {
       clientLogo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/serbom-logo-projeto_33c1deaa.png',
       client: 'Serbom',
       category: 'Desumidificação Industrial',
-      year: '2024'
+      year: '2022'
     },
     {
       id: 5,
@@ -154,7 +154,7 @@ export default function Clients() {
       clientLogo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/aurora-logo_7da9c3e8.png',
       client: 'Aurora',
       category: 'Climatização e Exaustão',
-      year: '2024'
+      year: '2024 - 2026'
     },
     {
       id: 6,
