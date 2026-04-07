@@ -21,7 +21,7 @@ export default function Footer() {
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/LogosemHVAC_c1620f1b.png"
                 alt="BKL Engenharia"
                 className="h-16 w-auto"
-                style={{ width: '250px', height: '65px' }}
+                style={{ width: '220px', height: '55px' }}
               />
             </div>
             <p className="text-white/80 text-sm leading-relaxed mb-4">
