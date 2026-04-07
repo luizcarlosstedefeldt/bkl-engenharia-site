@@ -113,6 +113,7 @@ export default function Clients() {
       title: 'Exaustão de Coifas - Alpargatas',
       description: 'Sistema de exaustão para cozinha industrial com capacidade de 30.000 m³/h. Conformidade com ABNT NBR 14518:2020.',
       image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/portfolio-exaustao.jpg',
+      clientLogo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/alpargatas-logo-projeto_ce8fc29d.png',
       client: 'Alpargatas',
       category: 'Exaustão de Coifas',
       year: '2023'
@@ -122,7 +123,7 @@ export default function Clients() {
       title: 'Serbom',
       description: 'Sistemas de desumidificação industrial com tecnologia avançada para controle de umidade em ambientes de produção. Solução completa com monitoramento em tempo real.',
       image: '',
-      clientLogo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/serbom-logo_55c596ed.png',
+      clientLogo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/serbom-logo-projeto_33c1deaa.png',
       client: 'Serbom',
       category: 'Desumidificação Industrial',
       year: '2024'
