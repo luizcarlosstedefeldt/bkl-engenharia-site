@@ -110,12 +110,12 @@ export default function Clients() {
     },
     {
       id: 3,
-      title: 'Exaustão de Coifas - Alpargatas',
+      title: 'Alpargatas',
       description: 'Sistema de exaustão para cozinha industrial com capacidade de 30.000 m³/h. Conformidade com ABNT NBR 14518:2020.',
       image: '',
       clientLogo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/ALPARGATAS_567efb9f.jpeg',
       client: 'Alpargatas',
-      category: 'Exaustão de Coifas',
+      category: 'Ventilação e Exaustão de Coifas',
       year: '2023'
     },
     {
@@ -255,7 +255,7 @@ export default function Clients() {
                       <img
                         src={project.clientLogo}
                         alt={project.client}
-                        style={{ width: project.id === 4 ? '80px' : '50px', height: project.id === 4 ? '52px' : '38px' }}
+                        style={{ width: project.id === 3 ? '85px' : project.id === 4 ? '80px' : '50px', height: project.id === 3 || project.id === 4 ? '52px' : '38px' }}
                         className="object-contain"
                       />
                     ) : (
