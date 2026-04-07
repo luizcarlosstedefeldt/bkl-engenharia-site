@@ -88,22 +88,22 @@ export default function Clients() {
   const featuredProjects = [
     {
       id: 1,
-      title: 'Ventilação Industrial - Gerdau',
-      description: 'Sistema completo de ventilação industrial com capacidade de 50.000 m³/h para planta siderúrgica. Conformidade com NR-10 e NR-18.',
-      image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/portfolio-ventilacao_industrial.jpg',
+      title: 'Gerdau',
+      description: 'Elaboração de projetos executivos, Fornecimento e Montagem de 08 Sistemas exaustão e ventilação em Cozinhas industriais nas plantas da Siderurgia e da Mineração, com capacidade de mais de 40.000 refeições / dia.',
+      image: '',
       clientLogo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/gerdau-logo_2e6ff44f.png',
       client: 'Gerdau',
-      category: 'Ventilação Industrial',
-      year: '2023'
+      category: 'Exaustão de Coifas em Cozinhas Industriais',
+      year: '2022 - 2026'
     },
     {
       id: 2,
-      title: 'Climatização Evaporativa - Bracell',
-      description: 'Instalação de sistema de climatização evaporativa em área de 5.000 m². Redução de 40% no consumo de energia.',
-      image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/portfolio-climatizacao.jpg',
+      title: 'Bracell',
+      description: 'Projetos de sistemas de Climatização, Ventilação e Exaustão de Cozinhas Industriais que atenderá a capacidade de mais de 4500 refeições/dia.',
+      image: '',
       client: 'Bracell',
-      category: 'Climatização',
-      year: '2023'
+      category: 'Projetos de sistemas de Climatização, Ventilação e Exaustão de Cozinhas Industriais',
+      year: '2025'
     },
     {
       id: 3,
