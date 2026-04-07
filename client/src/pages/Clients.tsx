@@ -199,16 +199,25 @@ export default function Clients() {
                 key={project.id}
                 className="group bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg hover:border-accent transition-all duration-300"
               >
-                <div className="relative h-48 overflow-hidden bg-muted">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute top-0 right-0 bg-accent text-accent-foreground px-3 py-1 m-3 rounded-full text-sm font-semibold">
-                    {project.year}
+                {project.image && (
+                  <div className="relative h-48 overflow-hidden bg-muted">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute top-0 right-0 bg-accent text-accent-foreground px-3 py-1 m-3 rounded-full text-sm font-semibold">
+                      {project.year}
+                    </div>
                   </div>
-                </div>
+                )}
+                {!project.image && (
+                  <div className="h-48 bg-muted flex items-center justify-center">
+                    <div className="text-center">
+                      <p className="text-muted-foreground text-sm font-semibold">{project.year}</p>
+                    </div>
+                  </div>
+                )}
                 <div className="p-6">
                   <p className="text-sm text-accent font-semibold mb-2">{project.category}</p>
                   <h3 className="text-lg font-bold text-foreground mb-2">
