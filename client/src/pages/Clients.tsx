@@ -14,7 +14,7 @@ export default function Clients() {
     {
       id: 1,
       name: 'Alpargatas',
-      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/alpargatas-logo-hq_040697b1.png',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/alpargatas-logo-150x96_9db8cdfa.png',
       category: 'Indústria Alimenticia',
       largeSize: true
     },
