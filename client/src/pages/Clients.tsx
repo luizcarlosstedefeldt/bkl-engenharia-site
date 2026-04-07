@@ -137,6 +137,16 @@ export default function Clients() {
       client: 'Aurora',
       category: 'Climatização e Exaustão',
       year: '2024'
+    },
+    {
+      id: 6,
+      title: 'Suzano',
+      description: 'Projetos de sistemas de Climatização, Ventilação e Exaustão em unidades de produção de celulose. Solução completa com conformidade às normas ambientais e de segurança.',
+      image: '',
+      clientLogo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/suzano-logo-projeto_68106f3f.png',
+      client: 'Suzano',
+      category: 'Climatização e Ventilação Industrial',
+      year: '2025'
     }
   ];
 
