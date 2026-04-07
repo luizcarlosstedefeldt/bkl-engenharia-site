@@ -121,7 +121,7 @@ export default function Clients() {
     {
       id: 4,
       title: 'Serbom',
-      description: 'Sistemas de desumidificação industrial com tecnologia avançada para controle de umidade em ambientes de produção. Solução completa com monitoramento em tempo real.',
+      description: 'Projeto de distribuição de ar com Sistemas de desumidificação industrial incluindo tecnologia avançada para controle de umidade em ambientes de armazenagem de resfriados e congelados. Solução completa com monitoramento em tempo real.',
       image: '',
       clientLogo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/serbom-logo-projeto_33c1deaa.png',
       client: 'Serbom',
