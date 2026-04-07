@@ -19,7 +19,7 @@ export default function Services() {
     {
       id: 2,
       icon: Hammer,
-      title: 'Climatização Adiabática',
+      title: 'Climatização',
       description: 'Soluções inovadoras de climatização com máxima eficiência energética em conformidade com NR-18.',
       features: ['Tecnologia moderna', 'Economia de energia', 'Sustentabilidade'],
     },
