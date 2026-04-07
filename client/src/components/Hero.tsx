@@ -24,7 +24,7 @@ export default function Hero() {
         {/* Left Content */}
         <div className="text-white z-10 lg:pr-8">
           <div className="inline-block mb-4 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
-            <span className="text-sm font-semibold text-accent">Soluções em Engenharia</span>
+            <span className="text-sm font-normal text-accent">Soluções em Engenharia</span>
           </div>
 
           <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight" style={{ fontFamily: 'Poppins, sans-serif' }}>
