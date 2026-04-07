@@ -85,32 +85,7 @@ export default function Clients() {
     }
   ];
 
-  const testimonials = [
-    {
-      id: 1,
-      name: 'João Silva',
-      company: 'Alpargatas',
-      role: 'Gerente de Operações',
-      text: 'A BKL Engenharia entregou um sistema de ventilação industrial que superou nossas expectativas. Profissionalismo e qualidade em cada detalhe.',
-      rating: 5
-    },
-    {
-      id: 2,
-      name: 'Maria Santos',
-      company: 'Anglo American',
-      role: 'Diretora de Manutenção',
-      text: 'Excelente conformidade com normas técnicas. A equipe da BKL é altamente qualificada e comprometida com a excelência.',
-      rating: 5
-    },
-    {
-      id: 3,
-      name: 'Carlos Oliveira',
-      company: 'ArcelorMittal',
-      role: 'Supervisor de Projetos',
-      text: 'Solução completa e inovadora. A BKL Engenharia é nosso parceiro confiável para sistemas de climatização.',
-      rating: 5
-    }
-  ];
+
 
   return (
     <div className="min-h-screen bg-background">
@@ -208,42 +183,7 @@ export default function Clients() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-20 bg-background">
-        <div className="container">
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold mb-2 text-foreground">
-              O que Nossos Clientes Dizem
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              Depoimentos de empresas que confiam na qualidade da BKL Engenharia
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial) => (
-              <div
-                key={testimonial.id}
-                className="bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-all duration-300"
-              >
-                <div className="flex items-center gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <span key={i} className="text-accent text-xl">★</span>
-                  ))}
-                </div>
-                <p className="text-foreground mb-6 leading-relaxed italic">
-                  "{testimonial.text}"
-                </p>
-                <div className="border-t border-border pt-4">
-                  <p className="font-bold text-foreground">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                  <p className="text-sm text-accent font-semibold">{testimonial.company}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground relative overflow-hidden">
