@@ -254,7 +254,8 @@ export default function Clients() {
                       <img
                         src={project.clientLogo}
                         alt={project.client}
-                        className="h-8 object-contain"
+                        style={{ width: '50px', height: '38px' }}
+                        className="object-contain"
                       />
                     ) : (
                       <span className="text-sm font-semibold text-foreground">{project.client}</span>
