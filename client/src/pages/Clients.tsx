@@ -15,7 +15,8 @@ export default function Clients() {
       id: 1,
       name: 'Alpargatas',
       logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/ALPARGATAS_567efb9f.jpeg',
-      category: 'Indústria Alimentícia'
+      category: 'Indústria Alimenticia',
+      largeSize: true
     },
     {
       id: 2,
@@ -75,7 +76,8 @@ export default function Clients() {
       id: 11,
       name: 'Embraer',
       logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/embraer-logo_785f0e30.png',
-      category: 'Aeronáutica'
+      category: 'Aeronáutica',
+      largeSize: true
     },
     {
       id: 12,
@@ -186,7 +188,7 @@ export default function Clients() {
                   <img
                     src={client.logo}
                     alt={client.name}
-                    style={{ width: '150px' }}
+                    style={{ width: client.largeSize ? '300px' : '150px' }}
                     className="max-h-24 max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
                   />
                 </div>
