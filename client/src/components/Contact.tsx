@@ -283,7 +283,7 @@ export default function Contact() {
             </h2>
 
             <p className="text-lg text-white/90 mb-8 leading-relaxed">
-              Estamos sempre em busca de parceiros confiáveis para expandir nossa rede de fornecedores. Se sua empresa oferece produtos ou serviços relacionados à engenharia, ventilação ou climatização, gostaríamos de conhecê-la.
+              Precisamos homologar seu produto ou serviço. Estamos sempre em busca de parceiros confiáveis para expandir nossa rede de fornecedores. Se sua empresa oferece produtos ou serviços relacionados à engenharia, ventilação ou climatização, gostaríamos de conhecê-la.
             </p>
 
             <div className="space-y-4">
