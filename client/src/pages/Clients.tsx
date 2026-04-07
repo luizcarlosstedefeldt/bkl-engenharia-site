@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
  * Design: Modernismo Corporativo Elevado
  * - Grid de logos com efeito hover
  * - Cores: Azul profundo e laranja
- * - Seção de depoimentos de clientes
+ * - Seção de projetos em destaque
  */
 
 export default function Clients() {
@@ -85,7 +85,35 @@ export default function Clients() {
     }
   ];
 
-
+  const featuredProjects = [
+    {
+      id: 1,
+      title: 'Ventilação Industrial - Gerdau',
+      description: 'Sistema completo de ventilação industrial com capacidade de 50.000 m³/h para planta siderúrgica. Conformidade com NR-10 e NR-18.',
+      image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/portfolio-ventilacao_industrial.jpg',
+      client: 'Gerdau',
+      category: 'Ventilação Industrial',
+      year: '2023'
+    },
+    {
+      id: 2,
+      title: 'Climatização Evaporativa - Bracell',
+      description: 'Instalação de sistema de climatização evaporativa em área de 5.000 m². Redução de 40% no consumo de energia.',
+      image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/portfolio-climatizacao.jpg',
+      client: 'Bracell',
+      category: 'Climatização',
+      year: '2023'
+    },
+    {
+      id: 3,
+      title: 'Exaustão de Coifas - Alpargatas',
+      description: 'Sistema de exaustão para cozinha industrial com capacidade de 30.000 m³/h. Conformidade com ABNT NBR 14518:2020.',
+      image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/portfolio-exaustao.jpg',
+      client: 'Alpargatas',
+      category: 'Exaustão de Coifas',
+      year: '2023'
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -146,6 +174,53 @@ export default function Clients() {
                 <p className="text-sm text-muted-foreground text-center">
                   {client.category}
                 </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Projects Section */}
+      <section className="py-20 bg-muted relative overflow-hidden">
+        <div className="container">
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold mb-2 text-foreground">
+              Projetos em Destaque
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              Conheça alguns dos principais trabalhos realizados com excelência
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {featuredProjects.map((project) => (
+              <div
+                key={project.id}
+                className="group bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg hover:border-accent transition-all duration-300"
+              >
+                <div className="relative h-48 overflow-hidden bg-muted">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute top-0 right-0 bg-accent text-accent-foreground px-3 py-1 m-3 rounded-full text-sm font-semibold">
+                    {project.year}
+                  </div>
+                </div>
+                <div className="p-6">
+                  <p className="text-sm text-accent font-semibold mb-2">{project.category}</p>
+                  <h3 className="text-lg font-bold text-foreground mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                    {project.description}
+                  </p>
+                  <div className="flex items-center justify-between pt-4 border-t border-border">
+                    <span className="text-sm font-semibold text-foreground">{project.client}</span>
+                    <ArrowRight size={16} className="text-accent" />
+                  </div>
+                </div>
               </div>
             ))}
           </div>
