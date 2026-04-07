@@ -14,7 +14,7 @@ export default function Clients() {
     {
       id: 1,
       name: 'Alpargatas',
-      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/ALPARGATAS_567efb9f.jpeg',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/alpargatas-logo-hq_040697b1.png',
       category: 'Indústria Alimenticia',
       largeSize: true
     },
@@ -75,7 +75,7 @@ export default function Clients() {
     {
       id: 11,
       name: 'Embraer',
-      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/embraer-logo_785f0e30.png',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/embraer-logo-hq_c7328b08.jpg',
       category: 'Aeronáutica',
       largeSize: true
     },
