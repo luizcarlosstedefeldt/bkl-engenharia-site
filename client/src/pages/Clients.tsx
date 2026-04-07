@@ -223,7 +223,7 @@ export default function Clients() {
                 className="group bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg hover:border-accent transition-all duration-300"
               >
                 {project.image && (
-                  <div className="relative h-48 overflow-hidden bg-muted">
+                  <div className="relative h-7 overflow-hidden bg-muted">
                     <img
                       src={project.image}
                       alt={project.title}
@@ -235,7 +235,7 @@ export default function Clients() {
                   </div>
                 )}
                 {!project.image && (
-                  <div className="h-48 bg-muted flex items-center justify-center">
+                  <div className="h-7 bg-muted flex items-center justify-center">
                     <div className="text-center">
                       <p className="text-muted-foreground text-sm font-semibold">{project.year}</p>
                     </div>
