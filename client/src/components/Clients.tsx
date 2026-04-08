@@ -99,7 +99,7 @@ export default function Clients() {
     {
       id: 15,
       name: 'Danone',
-      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/danone-logo_3f8e9f1c.jpg',
+      logo: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663433396372/oXebyALbuTY7pfm6aNR3rz/danone-logo_b25e916d.png',
       category: 'Indústria Alimentícia'
     }
   ];
