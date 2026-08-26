@@ -1,4 +1,4 @@
-import { MessageCircle, Phone, MapPin, Mail, ArrowRight } from 'lucide-react';
+import { MessageCircle, Phone, MapPin, Mail, ArrowRight, HelpCircle, Lightbulb, ShieldCheck } from 'lucide-react';
 import { useState } from 'react';
 
 /**
@@ -9,12 +9,27 @@ import { useState } from 'react';
  * - Cores: Azul profundo com acentos em laranja
  */
 export default function Contact() {
-  const [activeTab, setActiveTab] = useState<'contact' | 'supplier'>('contact');
+  const [activeTab, setActiveTab] = useState<'contact' | 'supplier' | 'feedback' | 'employee'>('contact');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     message: '',
+  });
+  const [employeeData, setEmployeeData] = useState({
+    subject: 'Condições de trabalho',
+    name: '',
+    email: '',
+    message: '',
+    anonymous: false,
+  });
+  const [feedbackData, setFeedbackData] = useState({
+    type: 'Pergunta',
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+    responseChannel: 'WhatsApp',
   });
   const [supplierData, setSupplierData] = useState({
     companyName: '',
@@ -28,6 +43,32 @@ export default function Contact() {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleEmployeeChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value, type } = e.target;
+    setEmployeeData(prev => ({ ...prev, [name]: type === 'checkbox' ? (e.target as HTMLInputElement).checked : value }));
+  };
+
+  const handleEmployeeSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const message = `Olá! Gostaria de registrar uma reclamação/relato pelo canal interno da BKL Engenharia.\n\nAssunto: ${employeeData.subject}\nIdentificação: ${employeeData.anonymous ? 'Prefiro não me identificar' : employeeData.name}\nE-mail: ${employeeData.anonymous ? 'Não informado' : employeeData.email}\n\nRelato:\n${employeeData.message}`;
+    const whatsappUrl = `https://wa.me/5511943750033?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+    setEmployeeData({ subject: 'Condições de trabalho', name: '', email: '', message: '', anonymous: false });
+  };
+
+  const handleFeedbackChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFeedbackData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleFeedbackSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const message = `Olá! Gostaria de enviar uma contribuição para a BKL Engenharia.\n\nTipo: ${feedbackData.type}\nNome: ${feedbackData.name}\nE-mail: ${feedbackData.email}\nTelefone: ${feedbackData.phone || 'Não informado'}\nCanal preferencial para retorno: ${feedbackData.responseChannel}\n\nMensagem:\n${feedbackData.message}`;
+    const whatsappUrl = `https://wa.me/5511943750033?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+    setFeedbackData({ type: 'Pergunta', name: '', email: '', phone: '', message: '', responseChannel: 'WhatsApp' });
   };
 
   const handleSupplierChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -85,6 +126,26 @@ export default function Contact() {
             }`}
           >
             Contato
+          </button>
+          <button
+            onClick={() => setActiveTab('employee')}
+            className={`px-6 py-3 font-semibold transition-all ${
+              activeTab === 'employee'
+                ? 'text-accent border-b-2 border-accent'
+                : 'text-white/70 hover:text-white'
+            }`}
+          >
+            Canal de Reclamações
+          </button>
+          <button
+            onClick={() => setActiveTab('feedback')}
+            className={`px-6 py-3 font-semibold transition-all ${
+              activeTab === 'feedback'
+                ? 'text-accent border-b-2 border-accent'
+                : 'text-white/70 hover:text-white'
+            }`}
+          >
+            Perguntas e Sugestões
           </button>
           <button
             onClick={() => setActiveTab('supplier')}
@@ -266,6 +327,118 @@ export default function Contact() {
             <p className="text-xs text-muted-foreground text-center mt-4">
               Seus dados serão enviados via WhatsApp para contato direto.
             </p>
+          </div>
+        </div>
+        )}
+
+        {activeTab === 'employee' && (
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="text-white">
+            <div className="inline-block mb-4 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20"><span className="text-sm font-semibold text-accent">Ambiente seguro e respeitoso</span></div>
+            <h2 className="font-bold text-4xl md:text-5xl mb-6 leading-tight" style={{ fontFamily: 'Poppins, sans-serif' }}>Canal de Reclamações</h2>
+            <p className="text-lg text-white/90 mb-6 leading-relaxed">Este canal é destinado a funcionários e colaboradores que desejam comunicar situações relacionadas ao ambiente de trabalho, respeito, segurança ou conduta.</p>
+            <p className="text-sm text-white/75 leading-relaxed">O canal digital não substitui atendimento de emergência, órgãos públicos ou apoio profissional. Em risco imediato, procure os serviços de emergência e o responsável local pela segurança.</p>
+          </div>
+          <div className="bg-white rounded-lg p-8 shadow-xl">
+            <h3 className="font-bold text-2xl text-foreground mb-2" style={{ fontFamily: 'Poppins, sans-serif' }}>Registrar reclamação ou relato</h3>
+            <p className="text-sm text-muted-foreground mb-6">Descreva os fatos com objetividade. A opção de não identificação não garante anonimato técnico, pois o envio é iniciado pelo WhatsApp.</p>
+            <form onSubmit={handleEmployeeSubmit} className="space-y-4">
+              <div>
+                <label htmlFor="employee-subject" className="block text-sm font-semibold text-foreground mb-2">Assunto</label>
+                <select id="employee-subject" name="subject" value={employeeData.subject} onChange={handleEmployeeChange} className="w-full px-4 py-2.5 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all">
+                  <option>Condições de trabalho</option><option>Saúde e segurança</option><option>Assédio ou violência</option><option>Discriminação</option><option>Conduta ética</option><option>Outro assunto</option>
+                </select>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div><label htmlFor="employee-name" className="block text-sm font-semibold text-foreground mb-2">Nome</label><input id="employee-name" type="text" name="name" value={employeeData.name} onChange={handleEmployeeChange} disabled={employeeData.anonymous} required={!employeeData.anonymous} className="w-full px-4 py-2.5 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all disabled:bg-muted" placeholder="Seu nome" /></div>
+                <div><label htmlFor="employee-email" className="block text-sm font-semibold text-foreground mb-2">E-mail</label><input id="employee-email" type="email" name="email" value={employeeData.email} onChange={handleEmployeeChange} disabled={employeeData.anonymous} required={!employeeData.anonymous} className="w-full px-4 py-2.5 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all disabled:bg-muted" placeholder="seu@email.com" /></div>
+              </div>
+              <div><label htmlFor="employee-message" className="block text-sm font-semibold text-foreground mb-2">Relato</label><textarea id="employee-message" name="message" value={employeeData.message} onChange={handleEmployeeChange} required rows={6} className="w-full px-4 py-2.5 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all resize-none" placeholder="Informe o que aconteceu, quando e onde..."></textarea></div>
+              <label className="flex items-start gap-3 text-sm text-muted-foreground"><input type="checkbox" name="anonymous" checked={employeeData.anonymous} onChange={handleEmployeeChange} className="mt-0.5 accent-orange-500" /><span>Prefiro não me identificar neste relato.</span></label>
+              <label className="flex items-start gap-3 text-xs text-muted-foreground"><input type="checkbox" required className="mt-0.5 accent-orange-500" /><span>Autorizo o uso dos dados informados para o tratamento deste relato, conforme a política de privacidade da empresa.</span></label>
+              <button type="submit" className="w-full px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-orange-600 transition-all duration-200 hover:shadow-lg hover:shadow-accent/30">Enviar relato pelo WhatsApp</button>
+            </form>
+            <p className="text-xs text-muted-foreground text-center mt-4">A BKL deve definir internamente responsáveis, prazos, registros e procedimentos de apuração antes de divulgar este canal como canal formal de compliance.</p>
+          </div>
+        </div>
+        )}
+
+        {activeTab === 'feedback' && (
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="text-white">
+            <div className="inline-block mb-4 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+              <span className="text-sm font-semibold text-accent">Escuta e melhoria contínua</span>
+            </div>
+            <h2 className="font-bold text-4xl md:text-5xl mb-6 leading-tight" style={{ fontFamily: 'Poppins, sans-serif' }}>
+              Perguntas e Sugestões
+            </h2>
+            <p className="text-lg text-white/90 mb-8 leading-relaxed">
+              Sua opinião ajuda a BKL Engenharia a melhorar o atendimento, os projetos e a qualidade das nossas soluções.
+            </p>
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0"><HelpCircle size={20} className="text-white" /></div>
+                <p className="text-white/90">Envie dúvidas sobre serviços, propostas, prazos ou atendimento.</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0"><Lightbulb size={20} className="text-white" /></div>
+                <p className="text-white/90">Compartilhe sugestões para tornar sua experiência ainda melhor.</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center flex-shrink-0"><ShieldCheck size={20} className="text-white" /></div>
+                <p className="text-white/90">As informações serão encaminhadas à equipe responsável para avaliação.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-lg p-8 shadow-xl">
+            <h3 className="font-bold text-2xl text-foreground mb-2" style={{ fontFamily: 'Poppins, sans-serif' }}>Fale com a BKL</h3>
+            <p className="text-sm text-muted-foreground mb-6">Selecione o tipo de mensagem e conte-nos como podemos ajudar.</p>
+            <form onSubmit={handleFeedbackSubmit} className="space-y-4">
+              <div>
+                <label htmlFor="feedback-type" className="block text-sm font-semibold text-foreground mb-2">Tipo de mensagem</label>
+                <select id="feedback-type" name="type" value={feedbackData.type} onChange={handleFeedbackChange} className="w-full px-4 py-2.5 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all">
+                  <option>Pergunta</option>
+                  <option>Sugestão</option>
+                  <option>Elogio</option>
+                  <option>Reclamação sobre serviço</option>
+                  <option>Orçamento</option>
+                </select>
+              </div>
+              <div>
+                <label htmlFor="feedback-name" className="block text-sm font-semibold text-foreground mb-2">Nome</label>
+                <input id="feedback-name" type="text" name="name" value={feedbackData.name} onChange={handleFeedbackChange} required className="w-full px-4 py-2.5 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all" placeholder="Seu nome" />
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label htmlFor="feedback-email" className="block text-sm font-semibold text-foreground mb-2">E-mail</label>
+                  <input id="feedback-email" type="email" name="email" value={feedbackData.email} onChange={handleFeedbackChange} required className="w-full px-4 py-2.5 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all" placeholder="seu@email.com" />
+                </div>
+                <div>
+                  <label htmlFor="feedback-phone" className="block text-sm font-semibold text-foreground mb-2">Telefone <span className="font-normal text-muted-foreground">(opcional)</span></label>
+                  <input id="feedback-phone" type="tel" name="phone" value={feedbackData.phone} onChange={handleFeedbackChange} className="w-full px-4 py-2.5 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all" placeholder="(11) 99999-9999" />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="feedback-message" className="block text-sm font-semibold text-foreground mb-2">Mensagem</label>
+                <textarea id="feedback-message" name="message" value={feedbackData.message} onChange={handleFeedbackChange} required rows={5} className="w-full px-4 py-2.5 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all resize-none" placeholder="Escreva sua pergunta ou sugestão..."></textarea>
+              </div>
+              <div>
+                <label htmlFor="feedback-channel" className="block text-sm font-semibold text-foreground mb-2">Canal preferencial para resposta</label>
+                <select id="feedback-channel" name="responseChannel" value={feedbackData.responseChannel} onChange={handleFeedbackChange} className="w-full px-4 py-2.5 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all">
+                  <option>WhatsApp</option>
+                  <option>E-mail</option>
+                </select>
+              </div>
+              <label className="flex items-start gap-3 text-xs text-muted-foreground">
+                <input type="checkbox" required className="mt-0.5 accent-orange-500" />
+                <span>Autorizo o uso dos dados informados para responder a esta mensagem, conforme a política de privacidade da empresa.</span>
+              </label>
+              <button type="submit" className="w-full px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-orange-600 transition-all duration-200 hover:shadow-lg hover:shadow-accent/30">
+                Enviar pelo WhatsApp
+              </button>
+            </form>
+            <p className="text-xs text-muted-foreground text-center mt-4">O envio abre o WhatsApp com a mensagem preenchida para o atendimento da BKL.</p>
           </div>
         </div>
         )}

@@ -58,7 +58,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/clientes" className="text-white/80 hover:text-accent transition-colors text-sm">
+                <a href="#clientes" className="text-white/80 hover:text-accent transition-colors text-sm">
                   Clientes
                 </a>
               </li>
@@ -68,8 +68,18 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#fornecedor" className="text-white/80 hover:text-accent transition-colors text-sm">
+                <a href="#contato" className="text-white/80 hover:text-accent transition-colors text-sm">
                   Seja um Fornecedor
+                </a>
+              </li>
+              <li>
+                <a href="#contato" className="text-white/80 hover:text-accent transition-colors text-sm">
+                  Perguntas e Sugestões
+                </a>
+              </li>
+              <li>
+                <a href="#contato" className="text-white/80 hover:text-accent transition-colors text-sm">
+                  Canal de Reclamações
                 </a>
               </li>
             </ul>
