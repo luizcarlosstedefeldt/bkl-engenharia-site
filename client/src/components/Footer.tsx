@@ -79,7 +79,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#contato" className="text-white/80 hover:text-accent transition-colors text-sm">
-                  Canal de Reclamações
+                  Canal de Compliance
                 </a>
               </li>
             </ul>

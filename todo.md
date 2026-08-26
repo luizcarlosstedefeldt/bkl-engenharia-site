@@ -10,6 +10,8 @@
 - [ ] Incluir orientações sobre urgências, retaliação, assédio e proteção de dados, sujeitas à validação jurídica da empresa.
 - [x] Fazer build e validar navegação, acessibilidade e ausência de erros.
 - [ ] Salvar checkpoint após a implementação.
+- [ ] Verificar a alteração do rótulo no rodapé para “Canal de Compliance”.
+- [ ] Validar o build após a edição visual e criar checkpoint.
 - [ ] Atualizar o pacote ZIP para publicação FTP, se solicitado ou necessário.
 
 ## Decisões pendentes
